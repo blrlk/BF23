@@ -1,0 +1,271 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 963px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#map {
+  transition: margin-left 0.4s;
+  padding: 16px;
+  height: 963px;
+  width: 98.1%;
+  z-index: 1;
+  margin: 0px;
+}
+
+.container {
+  height: 963px;
+}
+
+.logo {
+  width: 90%;
+  margin-left: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  position: relative;
+  height: 92px;
+  left: 5px;
+  right: 0px;
+  top: 5px;
+  bottom: 5px;
+  background: rgba(77, 77, 77, 0.3);
+}
+
+.form {
+  display: inline-block;
+  width: 100%;
+}
+
+/* 검색창 관련 */
+.search {
+  position: relative;
+  width: 88%;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 0px;
+  padding-right: 12px;
+  gap: 10px;
+}
+
+input {
+  width: 95%;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.searchbtn {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  padding-left: 10px;
+  top: 24px;
+  left: 79%;
+}
+
+.bookmarkbtn {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+
+  top: 25px;
+  left: 90%;
+}
+
+/* 검색 시 나타날 리스트와 스크롤바 */
+.one {
+  background-color: #f5f5f5;
+  width: 90%;
+  margin: 0 auto;
+  /* 스크롤바가 absolute로 들어가기 때문에
+       여기다가 relative를 준다 */
+  position: relative;
+}
+
+.two {
+  width: 100%;
+  max-height: 680px;
+  overflow-y: scroll;
+  /* 여기다가 padding값 입력하면 
+       스크롤바가 상자 밖으로 나감 */
+}
+
+.two::-webkit-scrollbar {
+  /* 스크롤바 너비 조절하는 부분 */
+  width: 10px;
+}
+
+.two::-webkit-scrollbar,
+.two::-webkit-scrollbar-thumb {
+  overflow: visible;
+  border-radius: 4px;
+}
+
+.two::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .2);
+}
+
+/* 탐색 창 */
+#topMenu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#topMenu ul li {
+  color: black;
+  background-color: rgb(244, 244, 244);
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height .3s;
+  overflow-y: scroll;
+}
+
+.submenu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menuLink {
+  color: black;
+}
+
+.submenuLink {
+  color: #2d2d2d;
+  background-color: white;
+  border: solid 1px black;
+  margin-top: -1px;
+}
+
+.menuLink,
+.submenuLink {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman", Dotum, Serif;
+  cursor: pointer
+}
+
+.topMenuLi:hover .menuLink {
+  color: red;
+  background-color: #dddddd;
+}
+
+.topMenuLi:hover .submenu {
+  height: 300px;
+}
+
+.submenuLink:hover {
+  color: red;
+  background-color: #dddddd;
+}
+
+.place1 {
+  height: 100px;
+  padding-left: 10px;
+  border: 5px black;
+}
+
+/* 사이드바 */
+.cover-bar {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: all .5s;
+  opacity: 1;
+  /* 배경색을 상자색과 똑같이 맞춰준다 */
+  background-color: #ffffff;
+}
+
+/* 중요한 부분 */
+.one:hover .cover-bar {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1;
+  top: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  transition: 0.3s;
+  /*펼침속도*/
+}
+
+.sidebar a {
+  display: inline;
+  padding: 8px 8px 8px 8px;
+  top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+/*메뉴열기 hover 시*/
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.btn {
+  text-align: right;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+.sidebar .closebtn .resetbtn .currentlocationbtn {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #faf0e6;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  position: relative;
+  margin: 7px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.openbtn:hover {
+  background-color: #efe7db;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

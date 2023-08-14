@@ -1,0 +1,82 @@
+{
+  "anwkddo": {
+    "body": {
+      "items": {
+        "data": [
+          {
+            "addr1": "부산광역시 영도구 전망로 24",
+            "addr2": "",
+            "firstimage": "http://tong.visitkorea.or.kr/cms/resource/49/2499749_image2_1.jpg",
+            "mapx": 129.0883893,
+            "mapy": 35.05039907,
+            "title": "태종대 전망대",
+            "tel": "051-405-1222",
+            "zipcode": 49127,
+            "suyusil": "N",
+            "parking": "Y",
+            "toilet": "Y",
+            "where": "대한민국 구석구석",
+            "time": "주간 09:00~18:00\n야간 18:00~22:00",
+            "etc": "차량 주차 운영시간 09:00~18:00\n그 외 시간 무료 주차",
+            "fee": "",
+            "code": 16
+          },
+          {
+            "addr1": "부산광역시 기장군 기장읍 연화1길 184",
+            "addr2": "",
+            "firstimage": "http://tong.visitkorea.or.kr/cms/resource/41/2704341_image2_1.jpg",
+            "mapx": 129.2281143,
+            "mapy": 35.21842174,
+            "title": "기장해녀촌(연화리횟촌)",
+            "tel": "051-409-4066(기장군 문화관광과)",
+            "zipcode": 46082,
+            "suyusil": "N",
+            "parking": "N",
+            "toilet": "N",
+            "where": "대한민국 구석구석",
+            "time": "",
+            "etc": "보조견 동반 가능",
+            "fee": "",
+            "code": 2
+          },
+          {
+            "addr1": "부산광역시 해운대구 달맞이길 190",
+            "addr2": "",
+            "firstimage": "http://tong.visitkorea.or.kr/cms/resource/37/2650837_image2_1.jpg",
+            "mapx": 129.1825699,
+            "mapy": 35.15771936,
+            "title": "해운대 달맞이길",
+            "tel": "051-749-5710",
+            "zipcode": 48116,
+            "suyusil": "N",
+            "parking": "Y",
+            "toilet": "Y",
+            "where": "대한민국 구석구석",
+            "time": "연중무휴",
+            "etc": "",
+            "fee": "",
+            "code": 16
+          },
+          {
+            "addr1": "부산광역시 해운대구 해운대해변로 266",
+            "addr2": "(중동)",
+            "firstimage": "",
+            "mapx": 129.1610328,
+            "mapy": 35.15919658,
+            "title": "SEA LIFE 부산아쿠아리움",
+            "tel": "051-740-1700",
+            "zipcode": 48100,
+            "suyusil": "Y",
+            "parking": "Y",
+            "toilet": "Y",
+            "where": "대한민국 구석구석",
+            "time": "평일 10:00~19:00\n주말 10:00~20:00 \n(관람시간 1시간 전까지 입장)\n연중무휴",
+            "etc": "주출입구 단차없음, 장애인용 엘리베이터, 휠체어 대여가능, 시각장애인 편의시설",
+            "fee": "대인(13세~성인) : 30,000원\n소인(3세~12세) : 25,000원",
+            "code": 16
+          }
+        ]
+      }
+    }
+  }
+}

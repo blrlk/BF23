@@ -1,0 +1,32 @@
+
+#main {
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Black Han Sans' !important;
+}
+p {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #bbdc6f; 
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all 0.4s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #acc869;
+    color: #5d5d54
+}
